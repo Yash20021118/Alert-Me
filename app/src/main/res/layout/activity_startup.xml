@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondary_text_color">
+
+    <!-- App Icon -->
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:src="@drawable/logoapp" />
+
+    <!-- Welcome Message -->
+    <TextView
+        android:id="@+id/welcome_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/alertme"
+        android:textSize="29sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_text_color"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/app_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/organize_and_track_your_tasks_easily"
+        android:textSize="19sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-light" />
+
+    <!-- Navigate Button -->
+    <Button
+        android:id="@+id/navigate_button"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/app_description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/get_started"
+        android:textSize="18sp"
+        android:textColor="@color/button_text_color"
+        android:backgroundTint="@color/orange"
+        android:fontFamily="sans-serif-medium"
+        android:elevation="4dp" />
+
+    <!-- Footer Text -->
+    <TextView
+        android:id="@+id/footer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/_2024_tasktracker_inc"
+        android:textSize="12sp"
+        android:textColor="@color/primary_text_color"
+        android:fontFamily="sans-serif-light" />
+
+</RelativeLayout>

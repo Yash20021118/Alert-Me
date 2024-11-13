@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#aeb5b4"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/notesHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="19dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/notes"
+        android:textColor="@color/orange"
+        android:textSize="24sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notesRecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNavigation"
+        android:layout_marginTop="50dp"
+        android:background="#aeb5b4"
+        android:padding="16dp" /> <!-- Adjust height to be above BottomNavigation -->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/orange"
+        android:src="@drawable/baseline_add_24"
+        android:tint="@color/white"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#B7FFFFFF"
+        app:backgroundTint="#95FFFFFF"
+        app:itemTextColor="#7F8584"
+        app:menu="@menu/bottom_nav_menu" /> <!-- Ensure you have this menu resource -->
+
+</RelativeLayout>
